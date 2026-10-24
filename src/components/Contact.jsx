@@ -11,7 +11,7 @@ export default function Contact() {
    <div className="relative mt-10 flex flex-wrap gap-5 border-t border-white/10 pt-6 text-sm text-slate-400">
     <a href="mailto:tharunilodi@gmail.com" className="transition hover:text-white">tharunilodi@gmail.com</a>
     <a href="https://github.com/tharuni2503" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 transition hover:text-white"><FaGithub/> GitHub <FaArrowUpRightFromSquare className="text-[10px]"/></a>
-    <a href="https://www.linkedin.com/in/loditharuni" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 transition hover:text-white"><FaLinkedin/> LinkedIn <FaArrowUpRightFromSquare className="text-[10px]"/></a>
+    <a href="https://www.linkedin.com/in/tharunilodi" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 transition hover:text-white"><FaLinkedin/> LinkedIn <FaArrowUpRightFromSquare className="text-[10px]"/></a>
    </div>
   </motion.div>
  </section>;
