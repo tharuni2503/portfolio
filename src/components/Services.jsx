@@ -1,128 +1,27 @@
 import { motion } from "framer-motion";
-import {
-  FaUtensils,
-  FaClinicMedical,
-  FaTshirt,
-  FaBriefcase,
-  FaUserTie,
-  FaRocket,
-  FaArrowRight,
-} from "react-icons/fa";
+import { FaCode, FaBrain, FaMobileScreenButton, FaLayerGroup } from "react-icons/fa6";
 
-const services = [
-  {
-    icon: <FaUtensils />,
-    title: "Restaurant Websites",
-    desc: "Modern websites with menu, gallery, reservations and contact sections.",
-  },
-  {
-    icon: <FaClinicMedical />,
-    title: "Clinic Websites",
-    desc: "Professional healthcare websites with appointment booking and services.",
-  },
-  {
-    icon: <FaTshirt />,
-    title: "Fashion Stores",
-    desc: "Elegant online stores that showcase products beautifully.",
-  },
-  {
-    icon: <FaBriefcase />,
-    title: "Business Websites",
-    desc: "Professional company websites that build trust and attract customers.",
-  },
-  {
-    icon: <FaUserTie />,
-    title: "Portfolio Websites",
-    desc: "Creative portfolios that highlight your work and personal brand.",
-  },
-  {
-    icon: <FaRocket />,
-    title: "Landing Pages",
-    desc: "High-converting landing pages designed for marketing campaigns.",
-  },
+const focus = [
+  {icon:FaCode,title:"Web development",desc:"Responsive, thoughtful interfaces using React, JavaScript, and modern CSS tooling."},
+  {icon:FaBrain,title:"AI & machine learning",desc:"Exploring computer vision, ML workflows, and ways to make AI features practical."},
+  {icon:FaMobileScreenButton,title:"Mobile experiences",desc:"Building cross-platform app experiences and learning how product ideas travel across devices."},
+  {icon:FaLayerGroup,title:"Product-minded building",desc:"Connecting UI, backend data, and user needs into projects that solve a clear problem."}
 ];
-
 export default function Services() {
-  return (
-    <section
-      id="services"
-      className="relative overflow-hidden bg-[#030712] py-24"
-    >
-      {/* Background Glow */}
-
-      <div className="absolute left-0 top-0 h-80 w-80 rounded-full bg-violet-600/10 blur-[150px]" />
-      <div className="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-cyan-500/10 blur-[150px]" />
-
-      <div className="relative mx-auto max-w-7xl px-6">
-
-        {/* Heading */}
-
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mx-auto mb-20 max-w-3xl text-center"
-        >
-          <h2 className="mt-8 text-4xl font-black text-white md:text-5xl">
-            Websites Designed
-            <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
-              {" "}For Your Business
-            </span>
-          </h2>
-
-          <p className="mt-6 text-lg leading-8 text-slate-400">
-            I create responsive, modern and high-performing websites
-            tailored to your business goals.
-          </p>
-        </motion.div>
-
-        {/* Cards */}
-
-        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-
-          {services.map((service, index) => (
-            <motion.div
-              key={service.title}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{
-                delay: index * 0.1,
-              }}
-              whileHover={{
-                y: -10,
-              }}
-              className="group rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl transition-all duration-300 hover:border-cyan-400/40 hover:shadow-[0_0_40px_rgba(34,211,238,.15)]"
-            >
-              {/* Icon */}
-
-              <div className="mb-8 inline-flex rounded-2xl bg-gradient-to-r from-violet-600 to-cyan-500 p-5 text-3xl text-white transition-transform duration-300 group-hover:rotate-6 group-hover:scale-110">
-                {service.icon}
-              </div>
-
-              <h3 className="text-2xl font-bold text-white">
-                {service.title}
-              </h3>
-
-              <p className="mt-5 leading-8 text-slate-400">
-                {service.desc}
-              </p>
-
-              <motion.button
-                whileHover={{
-                  x: 6,
-                }}
-                className="mt-8 flex items-center gap-3 font-semibold text-cyan-400"
-              >
-                Learn More
-                <FaArrowRight />
-              </motion.button>
-
-            </motion.div>
-          ))}
-
-        </div>
+  return <section id="about" className="border-y border-white/[.07] bg-white/[.015] px-5 py-24 sm:px-8">
+    <div className="mx-auto grid max-w-6xl gap-14 lg:grid-cols-[.85fr_1.15fr]">
+      <motion.div initial={{opacity:0,x:-20}} whileInView={{opacity:1,x:0}} viewport={{once:true}}>
+        <p className="font-mono text-xs tracking-[.25em] text-violet-300">A LITTLE ABOUT ME</p>
+        <h2 className="mt-4 text-3xl font-bold leading-tight tracking-tight text-white sm:text-5xl">Curious by nature.<br/><span className="text-slate-500">Builder by choice.</span></h2>
+        <p className="mt-6 leading-8 text-slate-400">I’m pursuing a B.Tech in Computer Science and Engineering with a specialization in AI & Machine Learning at Nalla Narasimha Reddy Educational Society. I enjoy learning by building — experimenting with ideas, working through technical challenges, and polishing the details that make digital products easier to use.</p>
+        <p className="mt-4 leading-8 text-slate-400">My interests sit at the intersection of frontend development, AI, and useful software. I’m looking for opportunities to collaborate, keep improving, and contribute to real products.</p>
+        <div className="mt-7 flex flex-wrap gap-2"><span className="rounded-full border border-white/10 px-3 py-1.5 text-xs text-slate-300">B.Tech · CSE (AI & ML)</span><span className="rounded-full border border-white/10 px-3 py-1.5 text-xs text-slate-300">Class of 2026</span><span className="rounded-full border border-white/10 px-3 py-1.5 text-xs text-slate-300">Hyderabad, India</span></div>
+      </motion.div>
+      <div className="grid gap-4 sm:grid-cols-2">
+        {focus.map((f,i)=>{const Icon=f.icon;return <motion.div key={f.title} initial={{opacity:0,y:15}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:i*.08}} className="rounded-2xl border border-white/10 bg-[#0c101a] p-6 transition hover:border-violet-300/30">
+          <Icon className="text-2xl text-cyan-300"/><h3 className="mt-5 font-semibold text-white">{f.title}</h3><p className="mt-2 text-sm leading-6 text-slate-400">{f.desc}</p>
+        </motion.div>})}
       </div>
-    </section>
-  );
+    </div>
+  </section>;
 }
