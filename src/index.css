@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
-:root { font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif; color: #f8fafc; background: #080b14; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+:root { font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif; color: #f8fafc; background: #080b14; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 body { margin: 0; min-width: 320px; min-height: 100vh; background: #080b14; }
 * { box-sizing: border-box; }
@@ -11,4 +11,6 @@ body { margin: 0; min-width: 320px; min-height: 100vh; background: #080b14; }
 ::-webkit-scrollbar-thumb { background: #34354e; border-radius: 999px; }
 a { text-decoration: none; }
 button, a { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid #67e8f9; outline-offset: 4px; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
