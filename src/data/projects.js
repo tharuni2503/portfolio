@@ -1,39 +1,8 @@
-import restaurant from "../assets/images/restaurant.png";
-import fashion from "../assets/images/fashion.png";
-import smilecare from "../assets/images/smilecare.png";
-
 export const projects = [
-  {
-    id: "01",
-    title: "Restaurant Website",
-    category: "Restaurant",
-    image: restaurant,
-    description:
-      "A modern restaurant website with menu, gallery and contact section.",
-    tech: ["React", "Tailwind CSS", "Vite"],
-    live: "#",
-    github: "#",
-  },
-  {
-    id: "02",
-    title: "Smile Care Clinic",
-    category: "Healthcare",
-    image: smilecare,
-    description:
-      "A responsive clinic website with appointment and services sections.",
-    tech: ["React", "Tailwind CSS", "Framer Motion"],
-    live: "#",
-    github: "#",
-  },
-  {
-    id: "03",
-    title: "Fashion Store",
-    category: "Fashion",
-    image: fashion,
-    description:
-      "A stylish landing page for a fashion boutique with product highlights.",
-    tech: ["React", "Tailwind CSS"],
-    live: "#",
-    github: "#",
-  },
+  {id:"01",title:"Smart Campus AI Platform",category:"Student Experience · AI",description:"A student-focused platform concept combining campus resources, study support, and career guidance in one place.",tech:["Flutter","Firebase","AI"],live:"https://github.com/tharuni2503/Smart-Campus-AI-Platform",github:"https://github.com/tharuni2503/Smart-Campus-AI-Platform"},
+  {id:"02",title:"Free-Hand Air Writing",category:"Computer Vision",description:"Exploring air-written character recognition using computer vision, hand tracking, and machine learning.",tech:["Python","OpenCV","MediaPipe","TensorFlow"],live:"https://github.com/tharuni2503/Free-Hand-Air-Writing-and-Character-Recognition",github:"https://github.com/tharuni2503/Free-Hand-Air-Writing-and-Character-Recognition"},
+  {id:"03",title:"TextileHub AI",category:"Marketplace · AI",description:"A textile marketplace concept connecting buyers and suppliers with AI-assisted pricing ideas.",tech:["React","Tailwind CSS","AI"],live:"https://github.com/tharuni2503/TextileHubAI",github:"https://github.com/tharuni2503/TextileHubAI"},
+  {id:"04",title:"Restaurant Website",category:"Web Development",description:"A responsive restaurant website demo focused on helping a local food business present its offering online.",tech:["React","Tailwind CSS","Vite"],live:"https://restaurant-demo-murex-nine.vercel.app/",github:"https://github.com/tharuni2503/restaurant_demo"},
+  {id:"05",title:"Smile Care Clinic",category:"Web Development",description:"A clean, responsive clinic website concept designed to make services and key information easy to explore.",tech:["React","Tailwind CSS"],live:"https://smile-care-green.vercel.app/",github:"https://github.com/tharuni2503/SmileCare"},
+  {id:"06",title:"Fashion Point",category:"Web Development",description:"A fashion boutique website demo with a visual-first layout and product-focused presentation.",tech:["React","Tailwind CSS"],live:"https://fashion-point-chi.vercel.app/",github:"https://github.com/tharuni2503/fashion_point"}
 ];
