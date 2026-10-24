@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaGithub, FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const projects = [
   {num:"01",title:"Smart Campus AI Platform",type:"AI & Mobile",category:"AI / ML",description:"A student-focused campus experience bringing study resources, an AI study assistant, and career guidance into one connected platform.",stack:["Flutter","Firebase","AI Assistant"],repo:"https://github.com/tharuni2503/Smart-Campus-AI-Platform",accent:"from-violet-500/25 to-indigo-500/5",symbol:"SC"},
@@ -36,12 +36,12 @@ export default function Projects() {
           <div className="flex flex-1 flex-col p-5">
             <p className="font-mono text-[10px] uppercase tracking-[.16em] text-cyan-300">{p.type}</p><h3 className="mt-3 text-lg font-semibold tracking-tight text-white">{p.title}</h3><p className="mt-3 flex-1 text-sm leading-6 text-slate-400">{p.description}</p>
             <div className="mt-5 flex flex-wrap gap-1.5">{p.stack.map(s=><span key={s} className="rounded-md border border-white/[.08] bg-white/[.025] px-2 py-1 text-[10px] text-slate-400">{s}</span>)}</div>
-            <div className="mt-5 flex items-center gap-4 border-t border-white/[.08] pt-4"><a href={p.repo} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-xs text-slate-300 transition hover:text-white"><FaGithub/> Repository</a>{p.live&&<a href={p.live} target="_blank" rel="noreferrer" className="ml-auto inline-flex items-center gap-2 text-xs text-cyan-200 transition hover:text-white">Live site <FaArrowUpRightFromSquare/></a>}</div>
+            <div className="mt-5 flex min-h-10 items-center border-t border-white/[.08] pt-4">{p.live ? <a href={p.live} target="_blank" rel="noreferrer" aria-label={`Open live demo for ${p.title}`} className="inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/[.06] px-3.5 py-2 text-xs text-cyan-200 transition hover:border-cyan-300/50 hover:bg-cyan-300/10 hover:text-white">View live demo <FaArrowUpRightFromSquare/></a> : <span className="font-mono text-[10px] uppercase tracking-wider text-slate-600">Live demo coming soon</span>}</div>
           </div>
         </motion.article>)}
         </AnimatePresence>
       </motion.div>
-      <div className="mt-8 flex justify-center"><a href="https://github.com/tharuni2503?tab=repositories" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/10 px-5 py-3 text-sm text-slate-300 transition hover:border-cyan-300/40 hover:text-cyan-100">Browse all repositories <FaArrowUpRightFromSquare/></a></div>
+      <p className="mt-8 text-center text-xs text-slate-500">Explore the live builds above — more project demos are on the way.</p>
     </div>
   </section>;
 }
