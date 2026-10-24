@@ -1,3 +1,3 @@
 export default function Footer() {
- return <footer className="border-t border-white/[.07] px-5 py-7 sm:px-8"><div className="mx-auto flex max-w-6xl flex-col gap-3 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between"><p>© {new Date().getFullYear()} Tharuni Lodi</p><p>Designed & built with React · Vite · Tailwind CSS</p><a href="#home" className="transition hover:text-white">Back to top ↑</a></div></footer>;
+ return <footer className="border-t border-white/[.07] px-5 py-7 sm:px-8"><div className="mx-auto flex max-w-6xl flex-col gap-3 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between"><p>© {new Date().getFullYear()} Tharuni Lodi</p><p>Designed with intention · Built with React</p><a href="#home" className="transition hover:text-white">Back to top ↑</a></div></footer>;
 }
