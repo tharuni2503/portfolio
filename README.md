@@ -46,4 +46,4 @@ npm run preview
 ## Links
 
 - GitHub: https://github.com/tharuni2503
-- LinkedIn: https://www.linkedin.com/in/loditharuni
+- LinkedIn: https://www.linkedin.com/in/tharunilodi
